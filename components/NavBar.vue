@@ -1,13 +1,18 @@
 <template>
     <nav>
         <h1>
-            John Sutor
+            <nuxt-link to="/">
+                John Sutor
+            </nuxt-link>
         </h1>
         <span class="links">
             <nuxt-link to="about">
                 About
             </nuxt-link>
-            <a href="">
+            <a 
+                href="https://drive.google.com/file/d/1ddLzC18cz4Q4p1Z60vpGumSiFA78F__-/view?usp=sharing"
+                target="_blank"
+            >
                 Resume
             </a>
         </span>
