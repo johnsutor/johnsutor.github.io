@@ -24,7 +24,7 @@
 
       <img 
         class="john-photo"
-        src="@/assets/john.jpg" 
+        src="~assets/john.jpg" 
         alt="John Hiking"
       >
     </div>
