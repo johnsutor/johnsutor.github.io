@@ -1,73 +1,85 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        johnsutorpersonal
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <!-- Top of Page -->
+    <div class="top">
+      <span class="top-info">
+        <h2>
+          Hey, I'm John Sutor
+        </h2>
+        <span class="top-links">
+          <nuxt-link 
+            to="about"
+            class="about-button"
+          >
+            About
+          </nuxt-link>
+            <a
+              class="about-contact"
+              href="mailto:john@sciteens.org"
+            >
+              Contact
+            </a>
+        </span>
+      </span>
+
+      <img 
+        class="john-photo"
+        src="@/assets/john.jpg" 
+        alt="John Hiking"
+      >
     </div>
+
   </div>
 </template>
 
-<script>
-export default {}
-</script>
+<style scoped>
+  .container {
+    margin: 4rem 8rem 4rem 8rem;
+  }
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+  .top-info {
+    margin: 4rem;
+  }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+  .top h2 {
+    font-size: 5rem;
+    color: #005397;
+  }
 
-.links {
-  padding-top: 15px;
-}
+  .top-links {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+  }
+
+  .about-button {
+    color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgb(0,83,151);
+    background: linear-gradient(135deg, rgba(0,83,151,1) 0%, rgba(32,173,101,1) 100%);
+  }
+
+  .about-contact {
+    margin-left: 1rem;
+    background-clip: text;
+    background-size: 100%;
+    background-repeat: repeat;
+    background: rgb(0,83,151);
+    background: linear-gradient(135deg, rgba(0,83,151,1) 0%, rgba(32,173,101,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
+  .john-photo {
+    width: 30rem;
+  }
 </style>
