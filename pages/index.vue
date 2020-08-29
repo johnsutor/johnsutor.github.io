@@ -33,23 +33,51 @@
 </template>
 
 <style scoped>
-  .container {
-    margin: 4rem 8rem 4rem 8rem;
-  }
-
   .top {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .top-info {
-    margin: 4rem;
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 80vw;
+      margin-top: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .top {
+      flex-wrap: wrap-reverse;
+    }
+
+    .john-photo {
+      width: 90vw;
+    }
+
+    .top h2 {
+      font-size: 3rem;
+      color: #005397;
+    }
   }
 
-  .top h2 {
-    font-size: 5rem;
-    color: #005397;
+  @media only screen and (min-width: 768px) {
+    .container {
+      margin: 4rem 8rem 4rem 8rem;
+    }
+
+    .top-info {
+      margin: 4rem;
+    }
+
+    .top h2 {
+      font-size: 5rem;
+      color: #005397;
+    }
+
+    .john-photo {
+      width: 30rem;
+    }
   }
 
   .top-links {
@@ -77,9 +105,5 @@
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-  }
-
-  .john-photo {
-    width: 30rem;
   }
 </style>
