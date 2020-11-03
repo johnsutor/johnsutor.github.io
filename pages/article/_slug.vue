@@ -7,15 +7,14 @@
 </template>
 
 <style scoped>
-    article {
-        margin-top: 4rem;
-        width: 50%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
+  article {
+    margin-top: 4rem;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #005397;
+  }
 </style>
 
 <script>
