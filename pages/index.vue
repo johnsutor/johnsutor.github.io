@@ -7,8 +7,8 @@
           Hey, I'm John Sutor
         </h2>
         <span class="top-links">
-          <nuxt-link to="publications" class="about-button">
-            Publications
+          <nuxt-link to="papers" class="papers-button">
+            Papers
           </nuxt-link>
           <a class="about-contact" href="mailto:john@sciteens.org">
             Contact
@@ -16,7 +16,7 @@
         </span>
       </span>
 
-      <img class="john-photo" src="~assets/john.jpg" alt="John Hiking" />
+      <img class="john-photo" src="~static/john.jpg" alt="John Hiking" />
     </div>
     <div class="about">
       <!-- About -->
@@ -35,7 +35,10 @@
       </p>
     </div>
     <!-- Articles -->
-    <div>
+    <div class="articles">
+      <h2>
+        Blogs
+      </h2>
       <Article v-for="article in articles"
         :key="article.title"
         :article="article"
@@ -93,6 +96,10 @@
   }
 }
 
+a {
+  font-weight: bold;
+}
+
 .top-links {
   display: flex;
   font-size: 2rem;
@@ -100,10 +107,12 @@
 }
 
 .about {
+  margin: 4rem 0rem 4rem 0rem;
   font-size: 1.5rem;
+  color: #005397;
 }
 
-.about-button {
+.papers-button {
   color: #ffffff;
   padding: 1rem;
   border-radius: 1rem;
@@ -131,18 +140,27 @@
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
+
+.articles {
+  margin: 4rem 0rem 4rem 0rem;
+}
+
+.articles h2 {
+  font-size: 3rem;
+  color: #005397;
+}
 </style>
 
 <script>
 import Article from '@/components/Article'
 export default {
-  async fetch() {
-    await this.$content('articles').sortBy('createdAt').fetch().then(
-      articles => {
-        this.articles = articles
-      }
-    )
-  },
+  // async fetch() {
+  //   await this.$content('articles').sortBy('createdAt').fetch().then(
+  //     articles => {
+  //       this.articles = articles
+  //     }
+  //   )
+  // },
   data() {
     return {
       articles: []

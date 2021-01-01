@@ -1,12 +1,12 @@
 <template>
 <div class="article">
 <nuxt-link  :to="{name: 'article-slug', params: {slug: article.slug }}">
-        <p>
+        <p class="article-date">
             {{ formatDate }}
         </p>
-        <h2>
+        <h3>
             {{ article.title }}
-        </h2>
+        </h3>
         <p>
             {{ article.description }}
         </p>
@@ -20,7 +20,19 @@
     width: 100%;
     border-top: 2px solid #005397;
     border-bottom: 2px solid #005397;
+    color: #005397;
+    font-size: 1.5rem;
 }
+
+.article-date {
+    color: #20AD65;
+}
+
+.article h3 {
+    font-size: 2rem;
+}
+
+
 </style>
 
 <script>

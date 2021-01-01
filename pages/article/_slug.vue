@@ -1,5 +1,6 @@
 <template>
     <article>
+        <img class="article-image" :src="article.image" :alt="article.alt">
         <h2>{{ article.title }}</h2>
         <p> Posted {{ formatDate(article.createdAt)}} </p>
         <nuxt-content :document="article" />
@@ -14,6 +15,10 @@
     margin-left: auto;
     margin-right: auto;
     color: #005397;
+  }
+
+  .article-image {
+    width: 100%;
   }
 </style>
 
