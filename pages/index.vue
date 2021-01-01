@@ -7,8 +7,8 @@
           Hey, I'm John Sutor
         </h2>
         <span class="top-links">
-          <nuxt-link to="about" class="about-button">
-            About
+          <nuxt-link to="publications" class="about-button">
+            Publications
           </nuxt-link>
           <a class="about-contact" href="mailto:john@sciteens.org">
             Contact
@@ -17,6 +17,22 @@
       </span>
 
       <img class="john-photo" src="~assets/john.jpg" alt="John Hiking" />
+    </div>
+    <div class="about">
+      <!-- About -->
+      <p>
+        Howdy! I'm a current Junior at Florida State University majoring in
+        Computational Science and Applied Mathematics. I conduct research under
+        Professor Jonathan Adams on the topic of Computer Vision and Synthetic
+        Data. I'm also one of the co-founders of
+        <a href="https://sciteens.org" target="_blank">
+          SciTeens
+        </a>
+        . We aim to bring scientific research, especially data-centric scientific
+        research, to all students regardless of their background. When I'm not
+        nerding out, my hobbies include meal prepping, camping/hiking, and vinyl
+        collecting.
+      </p>
     </div>
     <!-- Articles -->
     <div>
@@ -81,6 +97,10 @@
   display: flex;
   font-size: 2rem;
   align-items: center;
+}
+
+.about {
+  font-size: 1.5rem;
 }
 
 .about-button {
