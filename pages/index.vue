@@ -16,7 +16,7 @@
         </span>
       </span>
 
-      <img class="john-photo" src="~static/john.jpg" alt="John Hiking" />
+      <img class="john-photo" src="john.jpg" alt="John Hiking" />
     </div>
     <div class="about">
       <!-- About -->
@@ -36,9 +36,9 @@
     </div>
     <!-- Articles -->
     <div class="articles">
-      <h2>
+      <!-- <h2>
         Blogs
-      </h2>
+      </h2> -->
       <Article v-for="article in articles"
         :key="article.title"
         :article="article"
