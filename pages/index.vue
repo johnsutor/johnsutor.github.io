@@ -4,7 +4,7 @@
     <div class="top">
       <span class="top-info">
         <h2>
-          Hey, I'm John Sutor
+          Hey, I'm John Sutor 👋
         </h2>
         <span class="top-links">
           <nuxt-link to="papers" class="papers-button">
@@ -32,6 +32,10 @@
         research, to all students regardless of their background. When I'm not
         nerding out, my hobbies include meal prepping, camping/hiking, and vinyl
         collecting.
+      </p>
+      <p>
+        Feel free to peruse some of my articles below. I try and interject humor 
+        where possible to keep them both as informative and engaging as possible 😁.
       </p>
     </div>
     <!-- Articles -->

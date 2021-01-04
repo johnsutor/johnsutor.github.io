@@ -1,24 +1,43 @@
 <template>
     <article>
-        <img class="article-image" :src="article.image" :alt="article.alt">
         <h2>{{ article.title }}</h2>
         <p> Posted {{ formatDate(article.createdAt)}} </p>
         <nuxt-content :document="article" />
     </article>
 </template>
 
-<style scoped>
+<style>
   article {
-    margin-top: 4rem;
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     color: #005397;
+  }
+
+  @media only screen and (min-width: 768px) {
+    article {
+      margin-top: 4rem;
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    article {
+      width: 80vw;
+      margin-top: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .article-image {
     width: 100%;
+    height: 10rem;
+  }
+
+  .nuxt-content a {
+    font-weight: bold;
   }
 </style>
 
