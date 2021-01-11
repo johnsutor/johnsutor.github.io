@@ -31,9 +31,8 @@
     }
   }
 
-  .article-image {
+  .nuxt-content img {
     width: 100%;
-    height: 10rem;
   }
 
   .nuxt-content a {

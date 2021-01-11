@@ -20,6 +20,12 @@
 </template>
 
 <style>
+    @media only screen and (min-width: 768px) {
+        nav {
+            font-size: 1.5rem;
+        }
+    }
+
     nav {
         color: #005397;
         display: flex;
@@ -28,7 +34,6 @@
         height: 4rem;
         width: 100%;
         border-bottom: 2px solid  #20AD65;
-        font-size: 1.5rem;
     }
 
     nav .links a{
