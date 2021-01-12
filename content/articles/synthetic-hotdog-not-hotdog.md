@@ -256,5 +256,5 @@ Needless to say, synthetic data provides a relatively simple way to increase the
 
 That's not to say that synthetic data is the be-all-end-all for training computer vision models. Creating hyperrealistic renders currently requires a ton of manual tweaking on behalf of a researcher, and generating a single batch of images could take upwards of hours to complete. Furthermore, when 3D objects are superimposed on an image backgorund, any person can immediately pick up the discrepancies present in an image. The lighting on the 3D object may disagree with the lighting of the background image. The object may be way out of proportion to the background (as we saw with the 3D hotdogs superimposed onto backgrounds of tables).
 
-There's still a lot of work to be done in this nascent field, though the initial findings prove promising. With recent advances in graphics rendering, it's not hard to imagine that synthetic data can become a necessity for complex computer vision tasks in the near future. 
+There's still a lot of work to be done in this nascent field, though the initial findings prove promising. With recent advances in graphics rendering, it's not hard to imagine that synthetic data can become a necessity for complex computer vision tasks in the near future. If you hae any questions, feel free to [contact me](mailto:john@sciteens.org).
 

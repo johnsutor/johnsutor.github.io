@@ -40,9 +40,9 @@
     </div>
     <!-- Articles -->
     <div class="articles">
-      <!-- <h2>
+      <h2>
         Blogs
-      </h2> -->
+      </h2>
       <Article v-for="article in articles"
         :key="article.title"
         :article="article"
@@ -158,13 +158,13 @@ a {
 <script>
 import Article from '@/components/Article'
 export default {
-  // async fetch() {
-  //   await this.$content('articles').sortBy('createdAt').fetch().then(
-  //     articles => {
-  //       this.articles = articles
-  //     }
-  //   )
-  // },
+  async fetch() {
+    await this.$content('articles').sortBy('createdAt').fetch().then(
+      articles => {
+        this.articles = articles
+      }
+    )
+  },
   data() {
     return {
       articles: []

@@ -1,7 +1,7 @@
 <template>
     <article>
         <h2>{{ article.title }}</h2>
-        <p> Posted {{ formatDate(article.createdAt)}} </p>
+        <p> Posted {{ formatDate(article.createdAt)}}, updated {{ formatDate(article.updatedAt) }} </p>
         <nuxt-content :document="article" />
     </article>
 </template>
