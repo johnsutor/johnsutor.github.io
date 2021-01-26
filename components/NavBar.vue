@@ -10,7 +10,7 @@
                 Papers
             </nuxt-link>
             <a 
-                href="https://drive.google.com/file/d/1ddLzC18cz4Q4p1Z60vpGumSiFA78F__-/view?usp=sharing"
+                href="https://drive.google.com/file/d/1w88hgr2OoN7RMb5bmTbimP6cLRHBevsI/view?usp=sharing"
                 target="_blank"
             >
                 Resume

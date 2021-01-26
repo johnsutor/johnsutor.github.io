@@ -14,15 +14,39 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || "",
+    title: "John Sutor's Website",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
-      }
+        content: "A collection of jumbled ideas mixed in with some coding."
+      },
+      { property: "og:site_name", content: "John Sutor's Website" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://johnsutor.github.io",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "John Sutor's Website",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "A collection of jumbled ideas mixed in with some coding.",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "/og.jpg",
+      },
+      { property: "og:image:width", content: "600" },
+      { property: "og:image:height", content: "800" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
