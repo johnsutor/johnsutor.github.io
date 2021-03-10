@@ -38,6 +38,17 @@
         where possible to keep them both as informative and engaging as possible 😁.
       </p>
     </div>
+    <!-- Projects -->
+    <div class="articles">
+      <h2>
+        Projects
+      </h2>
+      <Project v-for="project in projects"
+        :key="project.title"
+        :project="project"
+      >
+      </Project>
+    </div>
     <!-- Articles -->
     <div class="articles">
       <h2>
@@ -157,21 +168,33 @@ a {
 
 <script>
 import Article from '@/components/Article'
+import Project from '@/components/Project'
+
 export default {
   async fetch() {
-    await this.$content('articles').sortBy('createdAt').fetch().then(
-      articles => {
-        this.articles = articles
-      }
-    )
+    await Promise.all([
+      await this.$content('articles').sortBy('createdAt').fetch().then(
+        articles => {
+          this.articles = articles
+        }
+      ),
+      await this.$content('projects').sortBy('createdAt').fetch().then(
+        projects => {
+          this.projects = projects
+        }
+      ),
+    ])
+
   },
   data() {
     return {
-      articles: []
+      articles: [],
+      projects: [],
     }
   },
   components: {
-    Article
+    Article,
+    Project
   }
 }
 </script>

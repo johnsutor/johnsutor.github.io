@@ -8,6 +8,16 @@
 </template>
 
 <style scoped>
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 80vw;
+      margin-top: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
   .container {
     margin-top: 4rem;
     width: 50%;
@@ -15,6 +25,7 @@
     margin-left: auto;
     margin-right: auto;
     color: #005397;
+  }
   }
 
   .article-image {

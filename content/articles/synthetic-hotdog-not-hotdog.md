@@ -1,5 +1,5 @@
 ---
-title: (Synthetic) Hotdog or not Hotdog?
+title: 🌭 (Synthetic) Hotdog or not Hotdog?
 description: I decided to one-up Jìan-Yáng with my own version of his hotdog-detecting algorithm. My special ingredient? Synthetic Data.
 ---
 
